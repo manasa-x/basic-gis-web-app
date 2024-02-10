@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Basic GIS Web App</title>
+</head>
+<body>
+  
+  
+  <div id="layerSelector">
+    <label for="layerSelect">Select Map Layer:</label>
+    <select id="layerSelect">
+      <option value="topographic">Topographic</option>
+      <option value="satellite">Satellite</option>
+      <option value="osm">OpenStreetMap</option>
+      <option value="terrain">Terrain</option>
+      <option value="dark">Dark Canvas</option>
+    </select>
+    <br>
+    <input type="file" id="fileInput" accept=".geojson,.json,.kml,.kmz">
+    <label for="fileInput" id="uploadButton">Upload Spatial Data</label>
+    <br>
+    <input type="text" id="addressInput" placeholder="Find Address">
+    <button id="searchButton">Search</button> <br>
+  </div>
+  <div id="viewDiv"></div>
+  <script src="https://js.arcgis.com/4.28/"></script>
+  <script src="script.js"></script>
+</body>
+</html>

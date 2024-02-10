@@ -1,0 +1,40 @@
+html, body, #viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  box-shadow: black;
+}
+
+#layerSelector {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#addressSearchContainer {
+  position: absolute;
+  top: 60px; 
+  left: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#fileInput {
+  display: none;
+}
+#uploadButton {
+  margin-top: 10px;
+  display: block;
+  cursor: pointer;
+}
